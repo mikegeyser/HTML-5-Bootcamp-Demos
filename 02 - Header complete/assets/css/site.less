@@ -1,0 +1,231 @@
+﻿@import 'variables.less';
+
+html {
+    text-align:center;
+}
+
+body {
+    font-size: 11px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    width:1170px;
+    display:inline-block;
+}
+
+hr {
+    border-color: @activeColour;
+}
+
+a {
+    text-decoration:none;
+}
+
+.right {
+    float:right;
+}
+
+footer{
+    color:#fff;
+
+    > section {
+        display:inline;
+        text-align:left;
+
+        > aside {
+            width: 389px;
+            display: inline;
+            float:left;
+
+            + aside {
+                width: 314px;
+
+                 + aside {
+                    width: 285px;
+                    float: right;
+                }
+            }
+
+            > nav {
+                > ul > li > a {
+                    color: white;
+                }
+
+                > img {
+                    margin-top: 30px;
+                }
+            }
+
+            > p > a {
+                color:white;
+            }
+        }
+    }
+}
+
+#copyrightNotice {
+    width: 50%;
+    clear:both;
+    margin-left: 25%;
+    padding-top:2em;
+    text-align:center;
+}
+
+aside > h3 {
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-bottom:0.5em;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+input {
+    border:0;
+    font-size:0.9em;
+    padding:4px;
+}
+
+input[type=submit] {
+    color: white;
+    background:@activeColour;
+    padding: 4px 20px;
+}
+
+input[type=text] {
+    width: 200px;
+}
+
+#facebookLogo {
+    background: url('@{baseImageUrl}assets/images/hahilogo.png') no-repeat;
+    padding: 126px 300px 42px 40px;
+    margin-left: 0;
+    margin-top: -165px;
+    background-position: 0 44px;
+}
+
+.backgroundContainer {
+    position:absolute;
+    left: 0;
+    width:100%;
+    height:330px;
+    z-index:-1;
+}
+
+footer > .backgroundContainer {
+    background:#333;
+}
+
+header {
+    text-align: left;
+
+    > .backgroundContainer {
+        background: url('/assets/images/banner.png') no-repeat;
+        margin-top: 86px;
+        height: 552px;
+
+        > .firstContent {
+            background: black;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            width: 100%;
+            position: absolute;
+            height: 132px;
+            top: 327px;
+            text-align: center;
+
+            > div {
+                z-index:99;
+                width:1170px;
+                display:inline-block;
+                text-align: left;
+                color:white;
+                
+                > h2 {
+                    font-weight:normal;
+                    font-size:20px;
+                    margin-top:34px;
+                }
+
+                > .right {
+                    margin-top: -45px;
+                    display: inline;
+
+                    > img {
+                        display: inline;
+                        margin-top:10px;
+                    }
+
+                    > p {
+                        display: inline;
+                        margin-top:0;
+                    }
+                }
+            }
+        }
+
+        > .secondContent {
+            background: @activeColour /* Old browsers */;
+            background: -moz-linear-gradient(top, @activeColour 0%, @darkerActiveColour 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@activeColour), color-stop(100%,@darkerActiveColour)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, @activeColour 0%,@darkerActiveColour 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, @activeColour 0%,@darkerActiveColour 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, @activeColour 0%,@darkerActiveColour 100%); /* IE10+ */
+            background: linear-gradient(to bottom, @activeColour 0%,@darkerActiveColour 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{activeColour}', endColorstr='@{darkerActiveColour}',GradientType=0 ); /* IE6-9 */
+
+            margin-top: 459px;
+            height: 95px;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            text-align: center;
+            
+            > div {
+                width:1170px;
+                display:inline-block;
+                text-align: left;
+                color:white;
+                
+                > h2 {
+                    font-weight:normal;
+                    font-size:20px;
+                    margin-top:34px;
+                }
+
+                > input[type=button] {
+                    float: right;
+                    padding: 27px 50px;
+                    margin-top: -71px;
+                    border-radius: 15px;
+                    color: @activeColour;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    > nav {
+        float: right;
+        margin-top: 16px;
+        padding-top: 50px;
+        background: url('/assets/images/redbowllogo.png') no-repeat;
+        background-position: right top;
+
+        > ul > li {
+            display: inline;
+            padding-right: 25px;
+
+            > a {
+                color: #000;
+            }
+        }
+    }
+}
+
+article {
+    margin-top: 552px;
+}
