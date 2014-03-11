@@ -1,0 +1,24 @@
+  function endsWith(fullString, suffex) {
+    // complete this function so that:
+    // endsWith('abc', 'bc') returns true
+    // endsWith('abc, 'd') returns false
+  }
+  // bonus marks if you can put it on the string prototype so that:
+  // 'hello'.endsWith('lo') returns true
+===================================================
+
+  function getMissingElements(firstArray, secondArray) {
+    // returns an array containing items that are only in the first array
+    //    but NOT in the second array
+  }
+  // bonus marks if you can put it on the array prototype so that:
+  // [1, 2, 3, 4, 5].getMissingElements([1,2,3]) returns [4,5]
+=============================================================
+
+  function keysAndValues(obj) {
+    // returns two arrays
+    // the first array contains all the property names of the object
+    // the second array contains all the values of the properties
+
+    // e.g. keysAndValues({a:1, b:2}) should return [['a', 'b'], [1, 2]]
+  }
