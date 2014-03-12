@@ -1,0 +1,15 @@
+﻿section {
+            padding: 1px 20px 1px 20px;
+            width: 600px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px #000;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #FFF;
+            background-color: #000;
+            -webkit-transform: rotate(-45deg);
+            margin: 0px 300px 0px -100px;
+            padding-left: 35px;
+        }
