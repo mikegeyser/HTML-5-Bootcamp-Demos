@@ -1,3 +1,5 @@
+Build a singleton class that generates a random number at first access and keeps returning that same number.
+
 // Tip 1: Math.random()
 // Tip 2: Singleton.instance() === Singleton.instance() (I think :P, maybe ==...)
 

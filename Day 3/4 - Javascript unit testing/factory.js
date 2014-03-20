@@ -1,23 +1,3 @@
-// Factory pattern
-// - Factory Method
-// - Abstract Factory
-
-var Vehicle = function (){
-			
-	this.drive = function(){
-		return "Vrrroooom!";
-	};
-}
-
-var Car = function() {
-	this.passengers = [];
-};
-Car.prototype = new Vehicle();
-
-var Truck = function() {
-	this.cargo = [];
-};
-Truck.prototype = new Vehicle();
 
 var CarFactory = function(){
 	this.build = function(specification){
@@ -50,13 +30,3 @@ var Factory = function(){
 		build: build
 	};
 }();
-
-Factory.register("car", CarFactory);
-Factory.register("truck", TruckFactory);
-
-var car = Factory.build({
-	type: "car"
-});
-
-car instanceof Car;
-
